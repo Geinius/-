@@ -12,8 +12,8 @@ int main() {
 }
 
 void Task() {
-	std::ifstream fin("cppFile.txt");
-	std::ofstream fout("cppFile2.txt");
+	std::ifstream fin("cppFile.txt");//считываем текс
+	std::ofstream fout("cppFile2.txt");;//открываем файл в режиме записи данных
 	char *pStr = 0;
 	std::string str;
 	pStr = new char[1024];
