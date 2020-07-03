@@ -20,7 +20,7 @@ void Task() {
 	while (fin) {
 		fin.get(pStr, 1024);
 		str += (char*)pStr;
-		fout.seekp(0, std::ios::end);
+		fout.seekp(0, std::ios::end);//Устанавливает позицию, в которую следующий символ должен быть вставлен в поток
 	}
 	fout << pRever(str);
 	fin.close();
